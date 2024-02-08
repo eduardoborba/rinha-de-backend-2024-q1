@@ -1,0 +1,6 @@
+create_table("clients") {
+	t.Column("id", "integer", {primary: true})
+  t.Column("limit", "integer")
+  t.Column("balance", "integer")
+	t.Timestamps()
+}
