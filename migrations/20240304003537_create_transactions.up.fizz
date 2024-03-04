@@ -1,0 +1,9 @@
+create_table("transactions") {
+	t.Column("id", "integer", {primary: true})
+  t.Column("type", "string")
+  t.Column("description", "string")
+  t.Column("amount", "integer")
+  t.Column("client_id", "integer")
+  t.ForeignKey("client_id", {"clients": ["id"]}, {"on_delete": "cascade"})
+	t.Timestamps()
+}

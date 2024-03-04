@@ -37,3 +37,15 @@ We recommend you heading over to [http://gobuffalo.io](http://gobuffalo.io) and 
 Good luck!
 
 [Powered by Buffalo](http://gobuffalo.io)
+
+## Creating model
+
+```
+soda g model transaction
+```
+
+## Running migrations
+
+```
+soda migrate up
+```
